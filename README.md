@@ -20,8 +20,11 @@ server
 Here the api is in the server directory, where src contains implementation code and tests contains unit tests. The api main entry is ./server/src/index.ts
 
 ## DotENV
-The code requires the following ENV variables to run
-PORT: which port the API is running
+The code requires the following ENV variables to run <br/>
+PORT: which port the API is running, default value is 3000
+REDIS_URI: the endpoint uri of redis, default value is localhost
+TOKEN_LENGTH: number: the generated user session token string length, default is 15
+TOKEN_EXPIRY_TIME_IN_MINUTE: the user session expiry time in minutes, default is 10
 
 ## How to run the code
 1. Clone the repo and enter the project directory
